@@ -1,10 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
-<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
-    <item
-        android:bottom="6dp"
-        android:drawable="@drawable/square_button_shape"
-        android:top="6dp"
-        />
-    
-
-</layer-list>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:drawable="@drawable/square_button_shape1"
+        android:state_pressed="true" />
+    <item android:drawable="@drawable/square_button_shape"
+        android:state_focused="true" />
+    <item android:drawable="@drawable/square_button_shape" />
+</selector>
